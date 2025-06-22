@@ -336,7 +336,9 @@ class OlystBackendTest(unittest.TestCase):
             if response.status_code == 200 and len(response.json()) > 0:
                 self.test_product_id = response.json()[0]["id"]
             else:
+                print("No products available to test get_product_by_id")
                 self.skipTest("No products available to test")
+                return
         
         # Get product by ID
         response = requests.get(f"{API_URL}/products/{self.test_product_id}")
