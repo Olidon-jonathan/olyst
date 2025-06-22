@@ -1,6 +1,17 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
 import "./App.css";
 import axios from "axios";
+import { 
+  FiHome, FiShoppingBag, FiInfo, FiMail, FiUser, FiLogOut, FiLogIn, FiUserPlus,
+  FiSearch, FiFilter, FiShoppingCart, FiDownload, FiEdit, FiTrash2, FiPlus,
+  FiBook, FiLayout, FiMusic, FiVideo, FiCpu, FiCheck, FiX, FiUpload
+} from 'react-icons/fi';
+import { 
+  HiOutlineSparkles, HiOutlineLightBulb, HiOutlineShieldCheck 
+} from 'react-icons/hi';
+import { 
+  BiSolidDashboard 
+} from 'react-icons/bi';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
