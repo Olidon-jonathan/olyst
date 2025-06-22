@@ -567,13 +567,13 @@ const AdminPage = () => {
                     setShowForm(true);
                   }}
                 >
-                  Modifier
+                  <FiEdit /> Modifier
                 </button>
                 <button 
                   onClick={() => deleteProduct(product.id)}
                   className="btn-danger"
                 >
-                  Supprimer
+                  <FiTrash2 /> Supprimer
                 </button>
               </div>
             </div>
