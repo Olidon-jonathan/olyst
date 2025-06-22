@@ -726,15 +726,18 @@ const AboutPage = () => (
           </p>
           <div className="features">
             <div className="feature">
-              <h3>🔒 Sécurisé</h3>
+              <HiOutlineShieldCheck />
+              <h3>Sécurisé</h3>
               <p>Paiements et téléchargements sécurisés</p>
             </div>
             <div className="feature">
-              <h3>⚡ Instantané</h3>
+              <HiOutlineSparkles />
+              <h3>Instantané</h3>
               <p>Accès immédiat après achat</p>
             </div>
             <div className="feature">
-              <h3>🎯 Qualité</h3>
+              <HiOutlineLightBulb />
+              <h3>Qualité</h3>
               <p>Produits sélectionnés avec soin</p>
             </div>
           </div>
