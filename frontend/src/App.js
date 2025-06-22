@@ -107,25 +107,25 @@ const Navbar = () => {
             className={currentPage === 'home' ? 'nav-link active' : 'nav-link'}
             onClick={() => setCurrentPage('home')}
           >
-            Accueil
+            <FiHome /> Accueil
           </button>
           <button 
             className={currentPage === 'products' ? 'nav-link active' : 'nav-link'}
             onClick={() => setCurrentPage('products')}
           >
-            Produits
+            <FiShoppingBag /> Produits
           </button>
           <button 
             className={currentPage === 'about' ? 'nav-link active' : 'nav-link'}
             onClick={() => setCurrentPage('about')}
           >
-            À propos
+            <FiInfo /> À propos
           </button>
           <button 
             className={currentPage === 'contact' ? 'nav-link active' : 'nav-link'}
             onClick={() => setCurrentPage('contact')}
           >
-            Contact
+            <FiMail /> Contact
           </button>
         </div>
         <div className="nav-auth">
