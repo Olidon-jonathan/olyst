@@ -244,19 +244,28 @@ const HomePage = ({ setCurrentPage }) => {
       <section className="categories-section">
         <h2>Nos Catégories</h2>
         <div className="categories-grid">
-          {categories.map(category => (
-            <div key={category.id} className="category-card">
-              <div className="category-icon">
-                {category.id === 'ebooks' && '📚'}
-                {category.id === 'templates' && '🎨'}
-                {category.id === 'audio' && '🎵'}
-                {category.id === 'videos' && '🎬'}
-                {category.id === 'ai_packs' && '🤖'}
+          {categories.map(category => {
+            const getCategoryIcon = (categoryId) => {
+              switch(categoryId) {
+                case 'ebooks': return <FiBook />;
+                case 'templates': return <FiLayout />;
+                case 'audio': return <FiMusic />;
+                case 'videos': return <FiVideo />;
+                case 'ai_packs': return <FiCpu />;
+                default: return <FiShoppingBag />;
+              }
+            };
+
+            return (
+              <div key={category.id} className="category-card">
+                <div className="category-icon">
+                  {getCategoryIcon(category.id)}
+                </div>
+                <h3>{category.name}</h3>
+                <p>{category.description}</p>
               </div>
-              <h3>{category.name}</h3>
-              <p>{category.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
