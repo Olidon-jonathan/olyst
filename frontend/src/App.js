@@ -529,7 +529,7 @@ const AdminPage = () => {
           className="btn-primary"
           onClick={() => setShowForm(true)}
         >
-          Ajouter un produit
+          <FiPlus /> Ajouter un produit
         </button>
       </div>
 
