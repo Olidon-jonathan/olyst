@@ -131,17 +131,17 @@ const Navbar = () => {
         <div className="nav-auth">
           {user ? (
             <div className="nav-user">
-              <span>Bonjour, {user.username}</span>
+              <span><FiUser /> Bonjour, {user.username}</span>
               {user.is_admin && (
                 <button 
                   className="nav-link admin"
                   onClick={() => setCurrentPage('admin')}
                 >
-                  Admin
+                  <BiSolidDashboard /> Admin
                 </button>
               )}
               <button className="btn-logout" onClick={logout}>
-                Déconnexion
+                <FiLogOut /> Déconnexion
               </button>
             </div>
           ) : (
@@ -150,13 +150,13 @@ const Navbar = () => {
                 className="btn-login"
                 onClick={() => setCurrentPage('login')}
               >
-                Connexion
+                <FiLogIn /> Connexion
               </button>
               <button 
                 className="btn-register"
                 onClick={() => setCurrentPage('register')}
               >
-                Inscription
+                <FiUserPlus /> Inscription
               </button>
             </div>
           )}
