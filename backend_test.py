@@ -6,6 +6,7 @@ import time
 import random
 import string
 import unittest
+import uuid
 from dotenv import load_dotenv
 import sys
 from pathlib import Path
