@@ -796,7 +796,9 @@ const ContactPage = () => {
               onChange={(e) => setFormData({...formData, message: e.target.value})}
               required
             />
-            <button type="submit">Envoyer</button>
+            <button type="submit">
+              <FiMail /> Envoyer
+            </button>
             
             {submitted && (
               <div className="success-message">
