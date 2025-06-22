@@ -375,7 +375,7 @@ const ProductCard = ({ product }) => {
           <img src={`data:image/jpeg;base64,${product.image_base64}`} alt={product.name} />
         ) : (
           <div className="placeholder-image">
-            <span>📦</span>
+            <FiShoppingBag />
           </div>
         )}
       </div>
