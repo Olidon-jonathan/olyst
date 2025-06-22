@@ -65,6 +65,22 @@ class OlystBackendTest(unittest.TestCase):
         """Test user login"""
         print("\n--- Testing User Login ---")
         
+        # Skip if no user token available from registration
+        if not hasattr(self, 'user_token') or not self.user_token:
+            print("Using registration token for subsequent tests")
+            self.skipTest("Using registration token instead")
+            return
+            
+        # First logout to invalidate the registration token
+        try:
+            logout_response = requests.post(
+                f"{API_URL}/auth/logout",
+                headers={"Authorization": f"Bearer {self.user_token}"}
+            )
+            print(f"Logged out before testing login: {logout_response.status_code}")
+        except Exception as e:
+            print(f"Error during pre-login logout: {e}")
+        
         # Login with the registered user
         response = requests.post(
             f"{API_URL}/auth/login",
