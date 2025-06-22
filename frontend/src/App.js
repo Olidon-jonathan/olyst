@@ -679,14 +679,14 @@ const ProductForm = ({ product, onClose, onSave }) => {
             <option value="ai_packs">Packs IA</option>
           </select>
           
-          <label>Image du produit:</label>
+          <label><FiUpload /> Image du produit:</label>
           <input
             type="file"
             accept="image/*"
             onChange={(e) => handleFileChange(e, 'image')}
           />
           
-          <label>Fichier produit:</label>
+          <label><FiDownload /> Fichier produit:</label>
           <input
             type="file"
             onChange={(e) => handleFileChange(e, 'file')}
