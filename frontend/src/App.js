@@ -328,6 +328,7 @@ const ProductsPage = ({ setCurrentPage }) => {
         
         <div className="products-filters">
           <div className="search-bar">
+            <FiSearch className="search-icon" />
             <input
               type="text"
               placeholder="Rechercher un produit..."
@@ -337,6 +338,7 @@ const ProductsPage = ({ setCurrentPage }) => {
           </div>
           
           <div className="category-filter">
+            <FiFilter className="filter-icon" />
             <select 
               value={selectedCategory} 
               onChange={(e) => setSelectedCategory(e.target.value)}
