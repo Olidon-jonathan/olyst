@@ -768,8 +768,8 @@ const ContactPage = () => {
             <h2>Besoin d'aide ?</h2>
             <p>N'hésitez pas à nous contacter pour toute question ou suggestion.</p>
             <div className="contact-details">
-              <p>📧 contact@olyst.com</p>
-              <p>🌍 Disponible 24h/24</p>
+              <p><FiMail /> contact@olyst.com</p>
+              <p><FiCheck /> Disponible 24h/24</p>
             </div>
           </div>
           
