@@ -228,7 +228,7 @@ const HomePage = ({ setCurrentPage }) => {
               className="btn-hero"
               onClick={() => setCurrentPage('products')}
             >
-              Découvrir nos produits
+              <FiShoppingBag /> Découvrir nos produits
             </button>
           </div>
           <div className="hero-image">
